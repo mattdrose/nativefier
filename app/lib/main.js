@@ -1768,6 +1768,7 @@ if (isOSX()) {
 
     _electron.app.dock.setBadge(count);
     if (bounce && count > currentBadgeCount) _electron.app.dock.bounce();
+    console.log(count);
     currentBadgeCount = count;
   };
 }

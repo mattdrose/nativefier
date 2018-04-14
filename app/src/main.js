@@ -67,6 +67,7 @@ if (isOSX()) {
   setDockBadge = (count, bounce = false) => {
     app.dock.setBadge(count);
     if (bounce && count > currentBadgeCount) app.dock.bounce();
+    console.log(count);
     currentBadgeCount = count;
   };
 }
